@@ -1,0 +1,24 @@
+model_type: llama
+  vocab_size               8192
+  hidden_size              256
+  num_hidden_layers        6
+  num_attention_heads      8
+  num_key_value_heads      2
+  head_dim                 32
+  intermediate_size        768
+  hidden_act               silu
+  rms_norm_eps             1e-06
+  max_position_embeddings  512
+  tie_word_embeddings      True
+  rope_theta               10000.0
+  sliding_window           нет
+  num_local_experts        нет
+parameter_count по полям:  6,622,464
+model.num_params():        6,622,464
+LlamaForCausalLM:          6,622,464
+KV-кэш на 512 токенов:     768 КБ
+model.safetensors:         13,250,992 байт (2 байта на число: 13,244,928)
+расхождение логитов: 0.090 (веса FP32 против BF16), 1.3e-05 (одни и те же веса BF16)
+BookLM (FP32):    Она была очень тихой и не хотела спать. Мама сказала: «Давай, давай, давай, пойдём спать». Маленькая девочка была очень
+LlamaForCausalLM: Она была очень тихой и не хотела спать. Мама сказала: «Давай, давай, давай, пойдём спать». Маленькая девочка была так
+совпало первых токенов: 29 из 30; с нашей моделью на весах BF16 — все

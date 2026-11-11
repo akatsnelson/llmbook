@@ -1,0 +1,15 @@
+1 PARSE OBSERVE | - parse_error
+2 PARSE OBSERVE | - parse_error
+3 PARSE OBSERVE | - parse_error
+4 PARSE OBSERVE BUDGET | - parse_error
+BUDGET заявок: 0
+1 PARSE VALIDATE AUTHORIZE ACT OBSERVE | create_ticket ok
+2 PARSE VALIDATE AUTHORIZE ACT OBSERVE | create_ticket ok
+3 PARSE VALIDATE AUTHORIZE ACT OBSERVE | create_ticket ok
+4 PARSE VALIDATE AUTHORIZE ACT OBSERVE BUDGET | create_ticket ok
+BUDGET заявок: 4
+Жил-был маленький девочка по имени Мия. У Мии был большой, к
+' cimed cimed cimed cimed cimed cimed cim'
+' cimed to clas a a a a a a a a a a a a a'
+' cimed to clas a a a a a a a a a a a a a'
+' cimed to clas a a a and and and and and'

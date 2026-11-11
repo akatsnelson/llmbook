@@ -1,0 +1,30 @@
+{
+ "config": {
+  "vocab": 8192,
+  "d_model": 256,
+  "layers": 6,
+  "heads": 8,
+  "kv_heads": 2,
+  "d_ff": 768,
+  "max_len": 512,
+  "rope_base": 10000.0,
+  "norm_eps": 1e-06
+ },
+ "args": {
+  "data": "final/data",
+  "tokenizer": "final/tok",
+  "out": "final/run",
+  "tokens": 100000000.0,
+  "bsz": 64,
+  "T": 512,
+  "lr": 0.002,
+  "min_lr_frac": 0.1,
+  "warmup": 300,
+  "wd": 0.1,
+  "seed": 1337
+ },
+ "steps": 3051,
+ "tokens_per_step": 32768,
+ "train_tokens": 12507970,
+ "val_tokens": 122359
+}

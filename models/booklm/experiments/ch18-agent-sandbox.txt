@@ -1,0 +1,5 @@
+Кот Вася был упрямый. Он не хотел играть на улице. Он просто
+в проекте: ['story.txt']
+файл весов: PermissionError
+ключ ssh: PermissionError
+сеть: PermissionError

@@ -1,0 +1,5 @@
+booklm-base/data.pkl: 8755 байт, команд 2324
+  GLOBAL 3, STACK_GLOBAL 0, REDUCE 114, BINPERSID 56
+  импортирует: collections.OrderedDict, torch.FloatStorage, torch._utils._rebuild_tensor_v2
+scan_pickle (имена, а не вызовы): нарушений 0: []
+  тревог было бы при сигнале на каждый REDUCE: 114

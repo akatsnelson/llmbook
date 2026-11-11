@@ -1,0 +1,10 @@
+{
+ "source_checkpoint": "booklm-instruct.pt",
+ "source_sha256": "b183daee34dd66e8d91594e334f734aeea024bf12575e08beb6ab7fe92891303",
+ "dtype": "bfloat16",
+ "max_logit_diff_fp32_permutation": 1.4781951904296875e-05,
+ "max_logit_diff_saved": 0.07354855537414551,
+ "greedy_flips_saved": 0,
+ "checked_positions": 64,
+ "chat_template_starts_with_bos": true
+}

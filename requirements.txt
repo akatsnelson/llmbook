@@ -1,0 +1,10 @@
+# Пакеты для кода книги, листингов глав и опытов на BookLM. Python 3.10 или новее.
+#   python3 -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+# На Linux без видеокарты PyTorch легче ставить с CPU-индекса:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+# Листинги в книге проверены на torch 2.14.1; на других версиях последние знаки чисел могут отличаться.
+torch>=2.6
+tokenizers>=0.21
+numpy>=2.0
+jupyterlab>=4.0

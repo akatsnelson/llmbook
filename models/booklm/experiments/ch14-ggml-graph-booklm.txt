@@ -1,0 +1,21 @@
+граф BookLM в llama.cpp, вход «Мама мыла раму»: 6 токенов вместе с <bos>
+узел                  операция    форма (ne0, ne1, ...)
+embd                  GET_ROWS    [256, 6, 1, 1]
+norm-0                RMS_NORM    [256, 6, 1, 1]
+attn_norm-0           MUL         [256, 6, 1, 1]
+Qcur-0                MUL_MAT     [256, 6, 1, 1]
+Qcur-0                RESHAPE     [32, 8, 6, 1]
+Qcur-0                ROPE        [32, 8, 6, 1]
+Vcur-0                MUL_MAT     [64, 6, 1, 1]
+Vcur-0                RESHAPE     [32, 2, 6, 1]
+Kcur-0                MUL_MAT     [64, 6, 1, 1]
+Kcur-0                RESHAPE     [32, 2, 6, 1]
+Kcur-0                ROPE        [32, 2, 6, 1]
+Kcur-0 (view)         VIEW        [64, 6, 1, 1]
+...
+result_output         MUL_MAT     [8192, 1, 1, 1]
+
+всего узлов 192, из них MUL_MAT 43
+узлов в блоках 0–5: [31, 31, 31, 31, 31, 33]
+состав блока 0: MUL_MAT 7, VIEW 5, RESHAPE 4, PERMUTE 3, RMS_NORM 2, MUL 2, ROPE 2, SET_ROWS 2, ADD 2, FLASH_ATTN_EXT 1, SWIGLU 1
+в блоке 5 ещё node_179 = GET_ROWS, node_180 = GET_ROWS — дальше считается только последний токен

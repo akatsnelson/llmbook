@@ -1,0 +1,7 @@
+# Необязательные пакеты для отдельных разделов.
+-r requirements.txt
+transformers>=4.50     # экспорт BookLM в формат Hugging Face (главы 5, 14)
+safetensors>=0.4       # хранение весов без pickle (главы 14, 18)
+onnx>=1.17             # ONNX-шаг BookLM (глава 14)
+onnxruntime>=1.20
+gguf>=0.10             # запись GGUF без llama.cpp (глава 14)

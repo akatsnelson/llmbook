@@ -1,0 +1,6 @@
+{
+ "trainable_params": 454656,
+ "steps": 609,
+ "train_pairs": 9752,
+ "merge_max_logit_diff": 1.430511474609375e-05
+}

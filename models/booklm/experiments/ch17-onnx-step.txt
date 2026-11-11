@@ -1,0 +1,8 @@
+файл ONNX: 33.4 МБ, узлов в графе: 894
+T =   1: step_diff ONNX Runtime -- PyTorch 9.1e-06, same_step(1e-4): True
+T =   7: step_diff ONNX Runtime -- PyTorch 8.6e-06, same_step(1e-4): True
+T =  31: step_diff ONNX Runtime -- PyTorch 8.1e-06, same_step(1e-4): True
+T = 127: step_diff ONNX Runtime -- PyTorch 8.1e-06, same_step(1e-4): True
+BF16 против FP32: наибольшее расхождение логитов 0.355, средний модуль логита 3.35
+  жадный токен другой в 28 из 2000 позиций (1.4%)
+  отрыв лидера в этих позициях: от 0.000 до 0.104; медиана по всем позициям 1.43

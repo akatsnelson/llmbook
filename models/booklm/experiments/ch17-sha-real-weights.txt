@@ -1,0 +1,14 @@
+tokenizer-v1 tokenizer.json               797355 байт  56ed9f9d15b3728c
+base-step-N  booklm-base.pt             26510643 байт  d3f0bc1123326d5c
+lora-v1      booklm-instruct-lora.pt     1845561 байт  3e6b29f305ca3002
+merged-v1    booklm-instruct.pt         26510955 байт  b183daee34dd66e8
+манифест lora-v1: parents={'base-step-N': 'd3f0bc1123326d5c'}
+манифест merged-v1: parents={'base-step-N': 'd3f0bc1123326d5c', 'lora-v1': '3e6b29f305ca3002'}
+манифест onnx-step-v1: parents={'merged-v1': 'b183daee34dd66e8'}
+оба родителя merged-v1 на месте
+blocks.3.ffn.up.weight[0, 0]: -0.0029216986149549484 -> -0.002921698847785592
+новая сумма: b37dc568a1aeecf0
+стоп: onnx-step-v1: родитель merged-v1 b183daee != b37dc568
+перплексия: 7.2584 -> 7.2584
+ответ до:  Жил-был маленький мальчик по имени Тим. Тим любил играть на улице. Однажды он увидел большую дерево с много листьев. Тим хотел взобраться на дерево, но он был слишком маленький. Тим попросил
+ответ после совпал: True

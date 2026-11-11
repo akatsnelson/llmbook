@@ -1,0 +1,5 @@
+models/booklm/**/*.pt filter=lfs diff=lfs merge=lfs -text
+models/booklm/*.pt filter=lfs diff=lfs merge=lfs -text
+models/booklm/**/*.bin filter=lfs diff=lfs merge=lfs -text
+models/booklm/**/*.safetensors filter=lfs diff=lfs merge=lfs -text
+models/booklm/data/sft.jsonl filter=lfs diff=lfs merge=lfs -text

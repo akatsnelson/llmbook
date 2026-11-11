@@ -1,0 +1,12 @@
+вход, T = 512: вызовов 1499, время 21.78 мс
+   43 раз  39.7%  mm
+    6 раз  19.2%  _scaled_dot_product_flash_attention_for_cpu
+   80 раз  15.3%  mul
+   37 раз   4.2%  add
+    6 раз   3.8%  silu
+шаг, T = 1: вызовов 1523, время 2.66 мс
+   43 раз  26.0%  mm
+   38 раз  23.2%  copy_
+    6 раз  16.0%  _scaled_dot_product_flash_attention_for_cpu
+   24 раз   5.2%  cat
+   80 раз   2.8%  mul
