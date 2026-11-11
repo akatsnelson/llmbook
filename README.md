@@ -84,8 +84,8 @@ python labs/ch01/check_setup.py   # проверка окружения
 ```
 
 `requirements.txt` — минимум для большинства глав (PyTorch, tokenizers, NumPy, JupyterLab).
-`requirements-extra.txt` добавляет пакеты для экспорта и форматов: transformers, safetensors, ONNX,
-onnxruntime и gguf. На Linux без видеокарты PyTorch легче поставить с CPU-индекса:
+`requirements-extra.txt` добавляет пакеты для экспорта и форматов (transformers, safetensors, ONNX,
+onnxruntime и gguf) и библиотеки агентов LangGraph и LangChain для раздела 13.8. На Linux без видеокарты PyTorch легче поставить с CPU-индекса:
 `pip install torch --index-url https://download.pytorch.org/whl/cpu`.
 
 ## Запуск

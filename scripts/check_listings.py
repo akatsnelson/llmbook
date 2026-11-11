@@ -49,7 +49,7 @@ def check_file(path: Path) -> int:
         captured = io.StringIO()
         try:
             with contextlib.redirect_stdout(captured):
-                exec(compile(code, f"{path}:{title}", "exec"), namespace)
+                exec(compile(code, f"{path}:{title}", "exec", dont_inherit=True), namespace)
         except Exception:  # noqa: BLE001
             failures += 1
             print(f"FAIL {path.name}: {title}")
